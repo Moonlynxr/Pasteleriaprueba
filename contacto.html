@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍰✨ Contacto — Delisabor Merry 🤖🔥 | SITIO HECHO CON IA |</title>
+  <link rel="icon" type="image/png" href="img/logo_delisabor.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <marquee class="marquesina" scrollamount="12">🤖 BIENVENIDOS A NUESTRO SITIO WEB HECHO 100% CON INTELIGENCIA ARTIFICIAL 🤖 — ✨ PASTELES DIGITALES DE ALTA CALIDAD ✨ — 🍰 CLICK AQUÍ PARA SORPRESA 🍰 — 🤖 SUBSCRIBETE A NUESTRO NEWSLETTER 🤖</marquee>
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="marca">
+        <img src="img/logo_delisabor.png" alt="Delisabor Merry" class="logo-img" data-logo>
+        <span class="marca-texto">Delisabor <span>Merry</span></span>
+      </a>
+      <nav class="nav-principal" id="nav-principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="personalizacion.html">Personalización</a>
+        <a href="galeria.html">Galería</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="acciones-header">
+        <button class="boton-carrito" aria-label="Abrir carrito">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+          <span class="contador-carrito" data-vacio="true">0</span>
+        </button>
+        <button class="boton-menu-movil" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <h1>📩 Solicita tu Pedido con Nuestro Asistente de IA 🤖🚀</h1>
+          <p>Cuéntanos la fecha, el lugar de entrega y los detalles de tu pastel. Si armaste tu pastel en la sección de Personalización, su resumen ya aparece abajo.</p>
+        </div>
+        <form class="formulario" id="form-pedido" novalidate>
+          <div class="campo-formulario">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name">
+            <span class="mensaje-error"></span>
+          </div>
+          <div class="campo-formulario">
+            <label for="telefono">Número de teléfono</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="10 dígitos">
+            <span class="mensaje-error"></span>
+          </div>
+          <div class="campo-formulario">
+            <label for="fecha-entrega">Fecha de entrega deseada</label>
+            <input type="date" id="fecha-entrega" name="fecha-entrega">
+            <span class="mensaje-error"></span>
+          </div>
+          <div class="campo-formulario">
+            <label for="direccion">Dirección de entrega</label>
+            <input type="text" id="direccion" name="direccion" autocomplete="street-address">
+            <span class="mensaje-error"></span>
+          </div>
+          <div class="campo-formulario">
+            <label for="descripcion-pedido">Descripción del pedido</label>
+            <textarea id="descripcion-pedido" name="descripcion-pedido" placeholder="Describe el pastel que imaginas, o revisa el resumen de tu carrito."></textarea>
+            <span class="mensaje-error"></span>
+          </div>
+          <button type="submit" class="boton boton-primario">Enviar solicitud</button>
+          <div class="confirmacion-envio" id="confirmacion-pedido">
+            ¡Gracias! Recibimos tu solicitud y nos pondremos en contacto contigo para confirmar los detalles de tu pedido.
+          </div>
+        </form>
+        <div class="seccion" style="padding-bottom:0;">
+          <h3>Métodos de pago que aceptamos</h3>
+          <div class="lista-pagos">
+            <span class="chip-pago">Efectivo</span>
+            <span class="chip-pago">Transferencia</span>
+            <span class="chip-pago">Tarjeta</span>
+            <span class="chip-pago">Pago al recoger</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <div>
+        <a href="index.html" class="marca">
+        <img src="img/logo_delisabor.png" alt="Delisabor Merry" class="logo-img" data-logo>
+        <span class="marca-texto">Delisabor <span>Merry</span></span>
+      </a>
+        <p style="margin-top:12px;">✨ Sinergizando Momentos Dulces Mediante Soluciones Reposteras Inteligentes 🤖🍰 ¡Potenciado por IA de Última Generación! 🚀.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="personalizacion.html">Personalización</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="contacto.html">Solicitar un pedido</a></li>
+          <li><a href="nosotros.html#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:0.7rem;color:#0f0;">🏆 Sitio 100% Responsive · 🤖 Optimizado con IA · 🚀 SEO Friendly · ✅ Mobile First · 🔒 100% Seguro · ⭐⭐⭐⭐⭐ Calificación 5 Estrellas</p>
+    <p class="nota-pie">Delisabor Merry — Prototipo académico de sitio web. Sin procesamiento real de pagos ni pedidos.</p>
+  </footer>
+  <div class="fondo-oscuro" id="fondo-oscuro"></div>
+  <aside class="panel-carrito" id="panel-carrito" aria-label="Carrito de compras">
+    <div class="panel-carrito__cabecera">
+      <h3 style="margin:0;">Tu carrito</h3>
+      <button class="panel-carrito__cerrar" id="cerrar-carrito" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <div class="panel-carrito__lista" id="lista-carrito"></div>
+    <div class="panel-carrito__pie">
+      <a href="contacto.html" class="boton boton-primario">Enviar solicitud de pedido</a>
+    </div>
+  </aside>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/formularios.js"></script>
+  <script src="js/magia.js"></script>
+</body>
+</html>

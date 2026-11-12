@@ -1,0 +1,499 @@
+/* ======================================
+   ESTILO.CSS
+   (sin comentarios útiles, solo vibes ✨)
+====================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 25%, #ff00cc 50%, #333399 75%, #00c9ff 100%);
+  background-size: 400% 400%;
+  animation: fondoMagico 8s ease infinite;
+  color: #ffffff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+@keyframes fondoMagico {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1, h2, h3 {
+  font-family: 'Comic Sans MS', cursive;
+  text-shadow: 3px 3px 0px #ff00ff, -2px -2px 0px #00ffff;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3.2rem;
+  background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #9933ff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: arcoiris 3s linear infinite;
+}
+
+@keyframes arcoiris {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+marquee, .marquesina {
+  background: yellow;
+  color: red;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 10px;
+  border-top: 5px dashed magenta;
+  border-bottom: 5px dashed magenta;
+}
+
+/* Encabezado desordenado */
+.encabezado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 10px;
+  background: #000000aa;
+}
+
+.nav-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px 25px;
+}
+
+.nav-principal a {
+  color: lime;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px black;
+}
+
+.nav-principal a:hover {
+  color: red;
+  transform: scale(1.3) rotate(-5deg);
+  display: inline-block;
+}
+
+.logo-img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 6px solid gold;
+  box-shadow: 0 0 25px 10px rgba(255, 215, 0, 0.9);
+  animation: girar 4s linear infinite;
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Botones genéricos de IA */
+.boton {
+  display: inline-block;
+  padding: 18px 45px;
+  margin: 12px;
+  border-radius: 50px;
+  border: 4px solid white;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #4ADEDE);
+  background-size: 200% 200%;
+  animation: brilloBoton 2s ease infinite;
+  color: white;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: 0 0 20px rgba(255,255,255,0.8), 0 10px 25px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+@keyframes brilloBoton {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.boton:hover {
+  transform: scale(1.15) rotate(3deg);
+}
+
+/* Secciones mal alineadas a propósito */
+.seccion {
+  padding: 60px 10px;
+}
+
+.contenedor {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero-texto {
+  text-align: left;
+  margin-left: 60px;
+}
+
+.hero-visual {
+  width: 110%;
+  margin-left: -40px;
+  transform: rotate(-4deg);
+  border: 10px solid gold;
+  border-radius: 40px 5px 40px 5px;
+  box-shadow: 0 0 40px 15px magenta;
+}
+
+.franja-valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.franja-valores div {
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 30px;
+  transform: rotate(-2deg);
+  width: 260px;
+}
+.franja-valores div:nth-child(2) { transform: rotate(3deg); margin-top: 25px; }
+.franja-valores div:nth-child(3) { transform: rotate(-5deg); }
+
+/* Tarjetas de producto estilo "plantilla genérica" */
+.rejilla-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+
+.tarjeta-producto {
+  background: white;
+  color: #222;
+  width: 280px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  border: 5px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta, red);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transform: rotate(-1deg);
+}
+.tarjeta-producto:nth-child(even) { transform: rotate(1.5deg); }
+
+.tarjeta-producto__foto {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background: repeating-conic-gradient(#eee 0% 25%, #fff 0% 50%) 50% / 20px 20px;
+}
+
+.tarjeta-producto__cuerpo {
+  padding: 18px;
+  text-align: center;
+}
+
+.tarjeta-producto__categoria {
+  display: inline-block;
+  background: gold;
+  color: #000;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.tarjeta-producto__cotizacion::before {
+  content: "✨🤖✅ ";
+}
+
+/* Filtros de catálogo */
+.filtros-catalogo {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filtro-chip {
+  background: black;
+  color: #0f0;
+  border: 2px dashed lime;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 999px;
+}
+
+.filtro-chip[aria-pressed="true"] {
+  background: red;
+  color: white;
+}
+
+/* Configurador desordenado */
+.configurador {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  text-align: left;
+}
+
+.opciones-configurador {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 10px 40px 10px 40px;
+  flex: 1 1 400px;
+}
+
+.grupo-opciones h3::before {
+  content: "👉 ";
+}
+
+.opciones-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.opcion-swatch label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border: 3px solid white;
+  border-radius: 999px;
+  background: #ff00aa;
+  font-weight: bold;
+}
+
+.opcion-swatch input:checked + label {
+  background: #00ffaa;
+  color: #000;
+}
+
+.punto-color {
+  width: 14px; height: 14px; border-radius: 50%;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.campo-mensaje textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: 3px dashed hotpink;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.resumen-pastel {
+  background: white;
+  color: #111;
+  padding: 25px;
+  border-radius: 30px;
+  flex: 1 1 300px;
+  transform: rotate(1deg);
+  box-shadow: 0 0 0 6px gold, 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.resumen-pastel dd.vacio {
+  color: red;
+  font-weight: bold;
+}
+
+.resumen-pastel dd.vacio::after {
+  content: " ❌";
+}
+
+/* Carrito */
+.panel-carrito {
+  background: linear-gradient(#111, #330033);
+  color: white;
+  border-left: 6px solid lime;
+}
+
+.item-carrito {
+  background: #222;
+  border: 2px dashed yellow;
+  border-radius: 15px;
+}
+
+.carrito-vacio::before {
+  content: "🛒💨 ";
+}
+
+/* Formularios */
+.formulario {
+  text-align: left;
+  max-width: 100%;
+  background: rgba(0,0,0,0.3);
+  padding: 25px;
+  border-radius: 10px 50px;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  background: #fffbe6;
+  border: 3px solid #ff6600;
+  border-radius: 15px;
+  color: #000;
+}
+
+.campo-formulario label::after {
+  content: " 👇";
+}
+
+.lista-pagos {
+  justify-content: center;
+}
+
+.chip-pago {
+  background: gold;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+/* Galería "masonry" pero mal */
+.rejilla-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.item-galeria {
+  width: 180px;
+  background: white;
+  padding: 4px;
+  border: 4px solid gold;
+  transform: rotate(-6deg);
+}
+.item-galeria:nth-child(even) { transform: rotate(5deg); margin-top: 20px; }
+.item-galeria:nth-child(3n) { transform: rotate(-10deg); width: 230px; }
+
+.item-galeria img {
+  width: 100%;
+  height: 240px;
+  object-fit: fill; /* a propósito: estira las fotos */
+}
+
+/* FAQ */
+.item-faq {
+  text-align: left;
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 2px solid cyan;
+}
+
+.item-faq__pregunta {
+  color: white;
+  font-weight: bold;
+}
+
+.item-faq__respuesta p {
+  color: #eee;
+}
+
+/* Footer con demasiada información */
+.pie-pagina {
+  background: #000;
+  border-top: 10px solid repeating-linear-gradient(90deg, red, yellow 10px);
+  padding-bottom: 20px;
+}
+
+.pie-pagina .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.nota-pie {
+  font-size: 0.65rem;
+  color: #888;
+}
+
+.nota-pie::before {
+  content: "🤖 Generado con mucha Inteligencia Artificial™ — ";
+}
+
+/* Cursor de brillos */
+.chispa {
+  position: fixed;
+  pointer-events: none;
+  font-size: 20px;
+  z-index: 9999;
+  animation: desvanecer 1s forwards;
+}
+
+@keyframes desvanecer {
+  to { transform: translateY(-40px) scale(0.3); opacity: 0; }
+}
+
+/* Barra de "cookies/IA" fija que nunca se quita del todo */
+.aviso-ia {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  color: lime;
+  padding: 14px;
+  font-size: 0.8rem;
+  z-index: 500;
+  border-top: 3px dashed lime;
+}
+
+.aviso-ia button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  margin-left: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Botón de WhatsApp flotante gigante, mal puesto */
+.flotante-whatsapp {
+  position: fixed;
+  bottom: 70px;
+  right: 15px;
+  width: 70px;
+  height: 70px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 0 30px 10px rgba(37,211,102,0.8);
+  animation: rebotar 1s infinite;
+}
+
+@keyframes rebotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+::selection {
+  background: magenta;
+  color: yellow;
+}
+
+/* scrollbar fea a propósito */
+::-webkit-scrollbar { width: 18px; }
+::-webkit-scrollbar-track { background: black; }
+::-webkit-scrollbar-thumb { background: linear-gradient(red, yellow, lime, cyan, blue, magenta); border-radius: 10px; }
